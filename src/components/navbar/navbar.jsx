@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React,{useRef,useEffect} from 'react'
 import {NavLink} from 'react-router-dom'
 import navigation from "../../utils/navigation"
 import './navbar.css'
@@ -7,13 +7,31 @@ import { Divide as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
     //show responsive nav
-    const navbarRef = useRef(null)
-    const navbarResRef = useRef(null)
-    function showNav(){
-        navbarRef.current.classList.toggle("inactive")
-        navbarResRef.current.classList.toggle("active")
-    }
+    const navbarRef = useRef(null);
+    const navbarResRef = useRef(null);
 
+  function showNav() {
+    navbarRef.current.classList.toggle("inactive");
+    navbarResRef.current.classList.toggle("active");
+  }
+
+  useEffect(() => {
+    const handleClick = () => {
+      navbarResRef.current.classList.remove("active");
+    };
+
+    navbarResRef.current.addEventListener("click", handleClick);
+
+    return () => {
+      navbarResRef.current.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+
+  //active nav styles
+  const active = {
+    color:"goldenrod"
+  }
     return (
         <div className="nav-wrapper">
         <div className="inner-nav-wrapper">
@@ -28,7 +46,7 @@ const Navbar = () => {
             {
                 navigation.map(nav => {
                     return (
-                            <NavLink className="nav-links" to={nav.href}>{nav.name}</NavLink>
+                            <NavLink key={nav.name}  style={({isActive}) => isActive ? active : null} className="nav-links" to={nav.href}>{nav.name}</NavLink>
                     )
                 })
             }
@@ -37,7 +55,7 @@ const Navbar = () => {
             {
                 navigation.map(nav => {
                     return (
-                            <NavLink className="nav-links" to={nav.href}>{nav.name}</NavLink>
+                            <NavLink key={nav.name}  style={({isActive}) => isActive ? active : null}  className="nav-links" to={nav.href}>{nav.name}</NavLink>
                     )
                 })
             }

@@ -10,7 +10,6 @@
     justify-content:space-between;
     align-items:center;
 }
-.logo{}
 .logo-img{
     width:258px;
     height:50px;
@@ -19,7 +18,9 @@
     display:flex;
     gap:2px;
 }
-
+.nav-responsive{
+    display:none
+}
 .nav-links{
     font-weight:600;
     color:#000000;
@@ -36,7 +37,7 @@
     display:none;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1320px){
     .logo-img{
         width:170px;
         height:30px;
@@ -46,33 +47,47 @@
         width:50px;
     }
     .nav{
-        background-color:#111;
         display:none;
     }
-    .nav.inactive{
-        display:none;
-    }
+    
     .nav-responsive{
-        background-color:#ccc;
         display:none;
-        width:100%;
-        height:100vh;
+        background-color:#ffffff;
+        width:50%;
+        margin:auto;
+        height:contain;
+        padding:20px 0;
+        border-radius:20px;
         z-index:99;
         flex-direction:column;
+        box-shadow:0 0.1px 16px 0 #f3f3f3;
     }
-    .nav-responsive .nav-links{
-        color:#ffffff;
-        align-items:center;
-        justify-content:center;
-        display:flex;
-        height:100vh;
-        flex-direction:column;
-    }
+
     .nav-responsive.active{
         display:block;
         top:0;
         left:0;
         position:fixed;
+        box-shadow:0 0.1px 16px 0 #f3f3f3;
+        animation:slide 1s;
+        transform:translateX(50%);
+    }
+    @keyframes slide{
+        from{
+            transform:translateY(-100%);
+        }
+        to{
+            transform:translateY(50%);
+            transform:translateX(50%);
+        }
+    }
+  
+    .nav-responsive.active .nav-links{
+        align-items:center;
+        justify-content:center;
+        display:flex;
+        flex-direction:column;
+        padding:10px 10px;
     }
     .nav-links{
         font-size:13px;
