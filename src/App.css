@@ -1,5 +1,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-
+:root {
+    --dark-blue:rgba(0, 8, 78, 0.884)
+}
+.flex{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    margin-bottom: 30px;
+}
 .main{
     max-width: 80rem;
     margin: auto;
