@@ -1,6 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import {NavLink} from 'react-router-dom'
-import navigation from "../../utils/navigation"
+import navigation from "./navigation"
 import './navbar.css'
 
 import { Divide as Hamburger } from 'hamburger-react'
