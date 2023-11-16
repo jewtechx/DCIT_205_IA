@@ -22,13 +22,13 @@
     display:none
 }
 .nav-links{
-    font-weight:600;
-    color:#000000;
+    font-weight:700;
+    color:#000000ce;
     text-decoration:none;
     padding:10px 12px;
     font-size:14px;
     text-transform:uppercase;
-    letter-spacing:0.1px;
+    letter-spacing:0.2px;
 }
 .nav-links:hover{
     color:goldenrod;
