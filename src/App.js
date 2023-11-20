@@ -6,6 +6,8 @@ import HomeLayout from './pages/home/homeLayout';
 import AboutLayout from './pages/about/aboutLayout';
 import Teams from './pages/teams/teams';
 import ResearchGroups from './pages/research groups/researchGroups';
+import Faq from './pages/faq/faq';
+import NotFound from './pages/404';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
            <Route path='/about' element={<AboutLayout />}/>
            <Route path='/teams' element={<Teams />}/>
            <Route path='/research-groups' element={<ResearchGroups />}/>
+           <Route path='/faq' element={<Faq />}/>
+           <Route path='*' element={<NotFound />}/>
          </Routes>
          <Footer />
       </BrowserRouter>

@@ -62,7 +62,33 @@
     text-decoration: underline;
     color:goldenrod;
 }
-
+.not-found{
+    background-image: url("https://images.pexels.com/photos/16933826/pexels-photo-16933826/free-photo-of-black-and-white-shot-of-a-vintage-car-on-a-tropical-town-street.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    backdrop-filter:blur(10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.not-found .link{
+    color:goldenrod;
+}
+.not-found .overlay{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00000065;
+    z-index: -1;
+}
 @media screen and (max-width:1230px) {
     .headline-text{
         margin: auto;
