@@ -21,7 +21,7 @@ export default function Hero() {
     <div className='main hero'>
 
         {/* main */}
-        <h1 className='headline-text'>Gateway-Computer Science for Innovators and Makers</h1>
+        <h1 className='headline-text'>Gateway-Computer Science for <br />Innovators and Makers</h1>
 
         <div className="short-courses">
            {course('https://dcs.ug.edu.gh/img/short_courses_images/Web%20Dev.png','Introduction to web programming','Understand the fundamentals of web technologies and create web-based applications with latest technologies')}

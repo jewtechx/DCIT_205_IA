@@ -12,23 +12,47 @@
 .main{
     max-width: 80rem;
     margin: auto;
+    padding: 0 30px;
 }
 .headline-text{
     font-size:60px;
     text-align: center;
     font-weight:600;
     font-family: 'Agbalumo',sans-serif;
-    text-wrap: wrap;
+    text-wrap: wrap;margin: 10px 0;
 }
 .title-text{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: #ffffff;
     line-height:24px;
+    text-align: center;
+}
+.title-text-black{
+    font-size: 23px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.856);
+    line-height:24px;
+    text-align: center;
 }
 .body-text{
     font-size: 15px;
     font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.body-text-light{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    color: #00000065;
+    line-height: 25px;
+}
+.body-text-white{
+    font-size: 15px;
+    font-weight: 500;
+    color:#f3f3f3;
     letter-spacing: 0.5px;
 }
 .link{
@@ -42,6 +66,6 @@
 @media screen and (max-width:1230px) {
     .headline-text{
         margin: auto;
-        font-size: 40px;
+        /* color: #00000065; */
     }
 }

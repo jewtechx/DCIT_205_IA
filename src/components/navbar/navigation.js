@@ -8,8 +8,8 @@ const navigation = [
     href:"/about"
 },
 {
-    name:"Faculty",
-    href:"/faculty"
+    name:"Teams",
+    href:"/teams"
 },
 {
     name:"Research Groups",
