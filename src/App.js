@@ -8,6 +8,8 @@ import Teams from './pages/teams/teams';
 import ResearchGroups from './pages/research groups/researchGroups';
 import Faq from './pages/faq/faq';
 import NotFound from './pages/404';
+import Contact from './pages/contact/contact';
+import Sotd from './pages/sotd/sotd';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
            <Route path='/about' element={<AboutLayout />}/>
            <Route path='/teams' element={<Teams />}/>
            <Route path='/research-groups' element={<ResearchGroups />}/>
+           <Route path='/site-of-the-day' element={<Sotd />}/>
+           <Route path='/contact' element={<Contact />}/>
            <Route path='/faq' element={<Faq />}/>
            <Route path='*' element={<NotFound />}/>
          </Routes>

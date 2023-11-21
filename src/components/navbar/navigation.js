@@ -29,7 +29,7 @@ const navigation = [
 },
 {
     name:"Site of the Day",
-    href:"/sodd"
+    href:"/site-of-the-day"
 },
 {
     name:"Contact",

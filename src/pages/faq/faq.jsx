@@ -43,7 +43,7 @@ export default function Faq() {
   return (
     <div className='main'>
       <h1 className='title-text-black'>Frequently Asked Questions</h1>
-      {renderFaqs}
+      {renderFaqs()}
     </div>
   );
 }
