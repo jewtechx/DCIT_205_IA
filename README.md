@@ -19,6 +19,10 @@ faculty and stuff
 3. Run `npm start` to start the project
 
 #### Watch How to SetUp a Cloned Project from Github
+
+https://github.com/jewtechx/DCIT_205_IA/assets/132118735/16950fb6-8a97-43e3-b010-ed5d15862c06
+
+
 <video>
   <source src="https://youtu.be/7qHLRh17xrg"/>
 </video>
