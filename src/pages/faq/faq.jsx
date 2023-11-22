@@ -5,6 +5,8 @@ import "./faq.css";
 
 export default function Faq() {
   // FAQ items state
+  const [openIndex,setOpenIndex] = useState(null)
+
   const [faqItems, setFaqItems] = useState([
     { title: "How can I appear in the faculty or staff sections of the website?", desc: "Information on appearing in the faculty or staff sections of the website should be available on the department's website or can be obtained by contacting the department directly.", isOpen: false },
     { title: "How do I add an event to the CS website calendar?", desc: "Information on adding events to the CS website calendar should be available on the department's website or can be obtained by contacting the department directly.", isOpen: false },
@@ -14,17 +16,12 @@ export default function Faq() {
     { title: "What are the requirements for the computer science major?", desc: "The requirements for the computer science major typically include completing specific courses in programming, algorithms, data structures, and computer systems, among others. Additionally, students may need to fulfill credit hour requirements and maintain a certain GPA", isOpen: false },
     { title: "What programming languages do you teach?", desc: "The department teaches a variety of programming languages, including but not limited to Java, C++, Python, and JavaScript", isOpen: false },
     { title: "What are the requirements for the computer science major?", desc: "Computer science focuses on the theoretical and practical aspects of computing, including programming, algorithms, and data structures, while information systems emphasize the application of technology in business settings, such as database management and enterprise systems", isOpen: false },
-    // Add other FAQ items similarly
   ]);
 
   // Toggling faq
   const toggleFaq = (index) => {
-    setFaqItems(prevItems => {
-      const newItems = [...prevItems];
-      newItems[index].isOpen = !newItems[index].isOpen;
-      console.log(newItems[index].isOpen,index)
-      return newItems;
-    });
+    setOpenIndex(openIndex === index ? null : index);
+   
   }
 
   // Render FAQ items
@@ -33,10 +30,11 @@ export default function Faq() {
       <div className="faq-wrapper" key={index}  onClick={() => toggleFaq(index)}>
         <div className="faq-title-wrapper">
           <h1 className='faq-title'>{item.title}</h1>
-          <h1 className='faq-title'>{item.isOpen ? "-" : "+"}</h1>
+          <h1 className='faq-title'>{openIndex === index ? "-" : "+"}</h1>
         </div>
-        <p className='faq-body body-text-light'>{item.isOpen ? item.desc : ""}</p>
-      </div>
+        {openIndex === index && (
+            <p className='faq-body body-text-light'>{item.desc}</p>
+        )}      </div>
     ));
   }
 

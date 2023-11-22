@@ -10,6 +10,9 @@ import Faq from './pages/faq/faq';
 import NotFound from './pages/404';
 import Contact from './pages/contact/contact';
 import Sotd from './pages/sotd/sotd';
+import Resources from './pages/resources/resources';
+import Events from './pages/events/events';
+import TipsLayout from './pages/tips/tipsLayout';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
            <Route path='/about' element={<AboutLayout />}/>
            <Route path='/teams' element={<Teams />}/>
            <Route path='/research-groups' element={<ResearchGroups />}/>
+           <Route path='/resources' element={<Resources />}/>
+           <Route path='/events' element={<Events />}/>
+           <Route path='/tips&info' element={<TipsLayout />}/>
            <Route path='/site-of-the-day' element={<Sotd />}/>
            <Route path='/contact' element={<Contact />}/>
            <Route path='/faq' element={<Faq />}/>

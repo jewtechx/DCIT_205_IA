@@ -25,7 +25,7 @@ const navigation = [
 },
 {
     name:"Tips & Info",
-    href:"/tips_and_info"
+    href:"/tips&info"
 },
 {
     name:"Site of the Day",

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
     //short courses
     const pushdown_style = {
-        marginTop:"40px"
+        marginTop:"100px"
     }
 
     const course = (img,title,body,pushdown = 0) => {
@@ -29,6 +30,16 @@ export default function Hero() {
            {course('https://dcs.ug.edu.gh/img/short_courses_images/Cyber%20Security.jpg','Information Security & Ethical Hacking','Learn the various techniques used to secure a computer system from attacks through hacking',1)}
            {course('https://dcs.ug.edu.gh/img/short_courses_images/CCNA.png','Computer Network Fundamentals [CCNA]','We provide training for students to become a Cisco Certified Associate (CCNA)')}
             <div className="overlay"></div>
+        </div>
+
+        <div className="events">
+          <img src="https://dcs.ug.edu.gh/img/gallery/PHOTO-2019-03-04-14-42-37.jpg" alt="event img" />
+
+          <div className="events-text">
+            <h1 className='title-text-black'>Sectional Events</h1>
+            <p className="body-text-light">Programmes, seminars and events organized by the department</p>
+            <Link to={"events"} className='link'>View upcoming and ongoing events</Link>
+          </div>
         </div>
     </div>
   )
