@@ -14,12 +14,14 @@ faculty and stuff
 
 
 ## How to Run Available Scripts in This Project
-1. Clone this project - "git clone https://github.com/jewtechx/DCIT_205_IA.git"
+1. Clone this project - `git clone https://github.com/jewtechx/DCIT_205_IA.git`
 2. Run `npm install` to install all neccessary files and packages
 3. Run `npm start` to start the project
 
 #### Watch How to SetUp a Cloned Project from Github
-https://youtu.be/7qHLRh17xrg
+<video>
+  <source src="https://youtu.be/7qHLRh17xrg"/>
+</video>
 
 This project was created by:
 ### Name: Jew Kofi Larbi Danquah
