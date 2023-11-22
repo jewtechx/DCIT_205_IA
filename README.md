@@ -1,3 +1,4 @@
+
 # University of Ghana Computer Science Department Website
 
 ## A Refurbishment of the Outdated Computer Science Website
@@ -40,5 +41,3 @@ https://github.com/jewtechx/DCIT_205_IA/assets/132118735/16950fb6-8a97-43e3-b010
 ## Hey , Do You Wanna Buy Me Coffee
 Feel free to show your appreciation via vodafone cash on 
 * 0203675053 - Emmanuel Larbi Danquah
-
-
