@@ -23,12 +23,18 @@ faculty and stuff
   <source src="https://youtu.be/7qHLRh17xrg"/>
 </video>
 
-This project was created by:
-### Name: Jew Kofi Larbi Danquah
-### Id: 11225319
 
-## Hey , Do You Wanna Buy Me Coffe
-Feell free to show your appreciation via vodafone cash on 
+
+
+## This project was created by:
+<b> Name : </b>Jew Kofi Larbi Danquah
+<b> Id :</b> 11225319
+
+
+
+
+## Hey , Do You Wanna Buy Me Coffee
+Feel free to show your appreciation via vodafone cash on 
 * 0203675053 - Emmanuel Larbi Danquah
 
 
