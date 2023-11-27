@@ -23,11 +23,8 @@ faculty and stuff
 
 https://github.com/jewtechx/DCIT_205_IA/assets/132118735/16950fb6-8a97-43e3-b010-ed5d15862c06
 
-
-<video>
-  <source src="https://youtu.be/7qHLRh17xrg"/>
-</video>
-
+## Screenshots of website
+![image](https://github.com/jewtechx/DCIT_205_IA/assets/132118735/271e7ce0-e13d-4c45-86bb-a9782097f96e)
 
 
 
